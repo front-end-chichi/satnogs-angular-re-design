@@ -37,7 +37,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/plotly-2.27.0.min.js"
+              ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

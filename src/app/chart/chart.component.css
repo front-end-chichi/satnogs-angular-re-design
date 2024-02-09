@@ -1,0 +1,10 @@
+.chart-container
+{
+    border: 0.1rem solid #5D5E6B;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    max-height: 24rem;
+}

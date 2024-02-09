@@ -1,1 +1,361 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'BarlowNorm';
+    src: url('./assets/fonts/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: normal;
+  }
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: 'BarlowNorm', sans-serif;
+    font-size: 0.8rem;
+    height: 100%;
+    margin: 0;
+}
+
+svg
+{
+    height: 1rem;
+    width: 1rem;
+}
+
+app-root
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+app-navbar
+{
+    position: fixed;
+    width: 100%;
+}
+
+app-observations, app-general-page
+{
+    height: 100%;
+    background-color: #474747;
+    position: fixed;
+    top: 3.9rem;
+    width: 100%;
+}
+
+app-observation
+{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: calc(100% - 3.9rem);
+    background-color: #474747;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 3.9rem;
+    width: 100%;
+}
+
+app-hamburger-menu
+{
+    height: 100%;
+}
+
+app-static-box
+{
+    padding-top: 1rem;
+}
+
+button
+{
+    height: 2rem;
+    padding: 1.2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #81FF62;
+    box-shadow: 0px 4px 4px #3a3939;
+    color: #474747;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Barlow;
+    font-weight: 600;
+}
+
+button svg
+{
+    padding-left: 0.5rem;
+}
+
+.font-bold
+{
+    font-weight: 600;
+}
+
+.icon-column
+{
+    flex: 0 0 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.id-column
+{ 
+    flex: 0 0 3rem;
+    width: 3rem;
+}
+
+.central-table
+{
+    display: flex;
+    flex: 1 1 calc(100% - 7.5rem);
+    padding-right: 1rem;
+    justify-content: space-between;
+}
+
+.column 
+{
+    flex: 0 0 15%;
+    align-self: center;
+}
+
+.id-column
+{
+    border-right: 0.1rem solid #D9D9D9;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.table
+{
+    display: flex;
+    flex-direction: column;
+    top: 4rem;
+    position: relative;
+    height: calc(100% - 9rem);
+    padding: 0 1rem;
+}
+
+.table.observation-table
+{
+    top: unset;
+    height: unset;
+}
+
+.table-header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #5D5E6B;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+    box-shadow: 0px 4px 4px #3a3939;
+    margin-bottom: 1rem;
+}
+
+.table-header-mobile
+{
+    display: none;
+}
+
+.table-content
+{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.table-row
+{
+    display: flex;
+    justify-content: space-between;
+    border: 0.1rem solid #5D5E6B;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.table-row:hover
+{
+    border-color: #81FF62;
+}
+
+.timeframe-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.status-column
+{
+    display: flex;
+    flex-direction: column;
+    color: #81FF62;
+}
+
+.svg-container svg
+{
+    height:  unset !important;
+    width: unset !important;
+    border-radius: 0.5rem;
+}
+
+.polarsublayer.angular-line path,
+.polarsublayer.radial-axis
+{
+    display: none;
+}
+
+.angularaxistick text
+{
+    fill: #5D5E6B !important;
+    font-family: 'BarlowNorm' !important;
+}
+
+.angularaxistick.angularaxistick.ticks
+{
+    stroke:  #5D5E6B !important;
+}
+
+.polarsublayer.radial-line line
+{
+    display: none;
+}
+
+app-observation .table-row:hover
+{
+    border: 0.1rem solid #5D5E6B;
+}
+
+app-observation .table.static
+{
+    top: 0rem;
+    height: unset;
+}
+
+app-observation .table-row
+{
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar 
+{
+    width: 5px;
+    margin-left: 0.2rem;
+}
+  
+::-webkit-scrollbar-track 
+{
+box-shadow: inset 0 0 2.5px 3a3939; 
+border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #5D5E6B; 
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #D9D9D9; 
+}
+
+app-mobile-table-row
+{
+    display: none;
+}
+
+app-chart
+{
+    display: flex;
+}
+
+@media (max-width: 45rem) 
+{
+    .table-header-mobile
+    {
+        display: flex;
+    }
+
+    .table-header .central-table,
+    .table-header .icon-column
+    {
+        display: none;
+    }
+
+    app-mobile-table-row
+    {
+        display: flex;
+    }
+
+    app-table-row
+    {
+        display: none;
+    }
+
+    .bottom-container
+    {
+        flex-direction: column !important;
+    }
+
+    .table.observation-table 
+    {
+        top: 5rem;
+    }
+
+    .back-header
+    {
+        display: flex;
+        position: fixed;
+        background: #474747;
+        flex-direction: row;
+        width: 100%;
+        z-index: 111111;
+        top: 3.9rem;
+    }
+
+    .upper-container
+    {
+        height: 10% !important;
+    }
+
+    app-data-box 
+    {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    button
+    {
+        margin: 0 1rem !important;
+    }
+
+    .table.static .table-header .central-table
+    {
+        display: flex;
+    }
+
+    .info
+    {
+        margin: 0 !important;
+    }
+}
+  

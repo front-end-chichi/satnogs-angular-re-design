@@ -1,0 +1,87 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #404040;
+    padding: 1rem;
+    color: white;
+}
+
+.left-navbar
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-navbar .company-name
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-navbar svg, .right-navbar svg
+{
+    padding-right: 0.5rem;
+}
+
+.left-navbar svg
+{
+    height: 1.5rem;
+    width: 1.5rem;
+    align-self: center;
+}
+
+.central-navbar
+{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.right-navbar
+{
+    align-items: center;
+    display: flex;
+}
+
+.tab
+{
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab:hover::before, .tab.selected::before
+{
+    border: 0.1rem solid #81FF62;
+    border-radius: 1rem;
+    position: absolute;
+    left: -0.1rem;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+}
+
+.hamburger-menu
+{
+    display: none;
+}
+
+@media (max-width: 45rem) 
+{
+    .hamburger-menu
+    {
+        display: flex;
+    }
+
+    .central-navbar, .right-navbar
+    {
+        display: none;
+    }
+    
+}
+  

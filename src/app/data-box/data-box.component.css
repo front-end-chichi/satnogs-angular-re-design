@@ -1,0 +1,36 @@
+.data-box-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 0.1rem solid #5D5E6B;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.data-box-container:hover
+{
+    border: 0.1rem solid #81FF62;
+}
+
+.data-box-container .show-on-hover
+{
+    display: none;
+}
+
+.data-box-container:hover .show-on-hover
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #81FF62;
+    font-weight: 400;
+}
+
+.data-box-container:hover .hide-on-hover
+{
+    display: none;
+}

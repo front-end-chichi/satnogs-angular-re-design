@@ -1,0 +1,38 @@
+<div class="navbar">
+    <div class="left-navbar">
+        <svg width="32" height="31" viewBox="0 0 32 31" fill="none">
+            <ellipse cx="11.6667" cy="19.4211" rx="9.66667" ry="9.57895" stroke="#81FF62" stroke-width="3"/>
+            <ellipse cx="27.282" cy="4.68421" rx="3.71795" ry="3.68421" stroke="#81FF62" stroke-width="2"/>
+            <path d="M28.1771 3.424L12.4723 20.6661C12.012 21.1715 11.2183 21.1916 10.7325 20.7103C10.2467 20.2289 10.267 19.4424 10.777 18.9863L28.1771 3.424Z" fill="#81FF62"/>
+        </svg>            
+        <div class="company-name">
+            <span class="font-bold">SATNOGS</span>
+            <span>network</span>
+        </div>
+    </div>
+
+
+    <div class="central-navbar">
+        <span class="tab" routerLink="/generalPage" (click)="onTabClick($event)">Home</span>
+        <span class=" tab selected" routerLink="" (click)="onTabClick($event)">Observations</span>
+        <span class="tab" routerLink="/generalPage" (click)="onTabClick($event)">Ground stations</span>
+        <span class="tab" routerLink="/generalPage" (click)="onTabClick($event)">Community</span>
+        <span class="tab" routerLink="/generalPage" (click)="onTabClick($event)">Wiki</span>
+        <span class="tab" routerLink="/generalPage" (click)="onTabClick($event)">About</span>
+    </div>
+    <div class="right-navbar" routerLink="/generalPage">
+        <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <path d="M1.875 22.5C1.875 22.5 0 22.5 0 20.625C0 18.75 1.875 13.125 11.25 13.125C20.625 13.125 22.5 18.75 22.5 20.625C22.5 22.5 20.625 22.5 20.625 22.5H1.875ZM11.25 11.25C12.7418 11.25 14.1726 10.6574 15.2275 9.60248C16.2824 8.54758 16.875 7.11684 16.875 5.625C16.875 4.13316 16.2824 2.70242 15.2275 1.64752C14.1726 0.592632 12.7418 0 11.25 0C9.75816 0 8.32742 0.592632 7.27252 1.64752C6.21763 2.70242 5.625 4.13316 5.625 5.625C5.625 7.11684 6.21763 8.54758 7.27252 9.60248C8.32742 10.6574 9.75816 11.25 11.25 11.25Z" fill="white"/>
+        </svg>
+        <span>LOGIN</span>
+    </div>
+
+    <div class="hamburger-menu" (click)="onHamburgerMenuClick($event)" >
+        <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="29" y2="1.5" stroke="#D9D9D9" stroke-width="3"/>
+            <line y1="11.5" x2="29" y2="11.5" stroke="#D9D9D9" stroke-width="3"/>
+            <line y1="21.5" x2="29" y2="21.5" stroke="#D9D9D9" stroke-width="3"/>
+            </svg>            
+    </div>
+
+</div>
